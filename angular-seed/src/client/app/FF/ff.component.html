@@ -1,0 +1,15 @@
+<h1>Fantasy Football</h1>
+<p>Want to see some really cool fantasy breakdowns of 2016?</p>
+
+<!-- Will need to change the button locations around to not require a form resubmit-->
+<form (submit)="viewStats()">
+  <!--<input [(ngModel)]="newName" name="newName" placeholder="This is a placeholder">-->
+  <button type="button" (click)="viewStats()">Refresh Grid</button>
+</form>
+
+<div style = "margin-top:15px" >
+<!-- TODO set up with lazy loading -->
+<p-dataTable *ngIf="show" [value]="randomData">
+  <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header"></p-column>
+</p-dataTable>
+</div>

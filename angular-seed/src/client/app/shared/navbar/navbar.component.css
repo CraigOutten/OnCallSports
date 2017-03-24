@@ -1,0 +1,33 @@
+nav a {
+  /*color: #8f8f8f;*/
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-right: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+nav a.router-link-active {
+  color: orange;
+  font-weight:bold;
+}
+
+.more {
+  background: url("/assets/svg/more.svg");
+  float: right;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+  margin-right: 20px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.customMenu {
+  background-color: #106cc8;
+}
